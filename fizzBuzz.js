@@ -1,17 +1,17 @@
 let output = [];
 function fizzBuzz() {
-    for (let i = 1; i <=100; i++) {
-        if (i % 3 === 0 && i % 5 !== 0) {
+    for (let count = 1; count<=100; count++) {
+        if (count %3 === 0 && count %5 !== 0) {
             output.push("Fizz");
-        } 
-        else if (i%3 !==0 && i%5 ===0) {
+        }  
+        else if (count %3 !==0 && count %5 ===0) {
             output.push("Buzz");
         }
-        else if (i%3 ===0 && i%5 ===0) {
+        else if (count %3 ===0 && count %5 ===0) {
             output.push("FizzBuzz");
         }
         else {
-            output.push(i);
+            output.push(count);
  
         }  
     }
